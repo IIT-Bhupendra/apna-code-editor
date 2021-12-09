@@ -4,8 +4,39 @@ import useLocalStorage from "../Hooks/useLocalStorage";
 import "./App.css";
 
 function App() {
-  const [html, setHtml] = useLocalStorage("html", "");
-  const [css, setCss] = useLocalStorage("css", "");
+  const initialHtml = `<!-- HTML: Encode the projects to decode your future -->
+  <h1> Apna Code Editor </h1>
+  <button>Start Building Your Dream Project</button>`;
+
+  const initialCss = `/* CSS: Encode the projects to decode your future */
+  *{
+    font-family: arial;
+  }
+  
+  body{
+    display: flex;
+      flex-direction: column;
+     justify-content: center;
+      align-items: center;
+  }
+  
+  h1{
+    color: hotpink;
+  }
+  
+  button{
+    background-color: lightgreen;
+    border:none;
+    cursor: pointer;
+    color: white;
+    padding: 0.8em 2em;
+    font-size: 1.5em;
+    font-weight: bolder;
+    border-radius: 15px;
+  }`;
+
+  const [html, setHtml] = useLocalStorage("html", initialHtml);
+  const [css, setCss] = useLocalStorage("css", initialCss);
   const [js, setJs] = useLocalStorage("js", "");
   const [srcDoc, setSrcDoc] = useState(``);
 
