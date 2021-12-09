@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.App {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100vw;
+  font-family: "Roboto", "sans-serif";
+}
+
+.top-pane {
+  height: 48vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(102, 102, 102);
+}
+
+.bottom-pane {
+  height: 52vh;
+  margin: auto auto;
+}
+
+.bottom-pane > iframe {
+  width: 100vw;
+  height: 52vh;
+  border: none;
+}

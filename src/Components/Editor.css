@@ -1,0 +1,48 @@
+.editor {
+  flex-grow: 1;
+  flex-basis: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0.5em;
+}
+
+.collapsed {
+  flex-grow: 0;
+}
+
+.btn {
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 8px 4px;
+  cursor: pointer;
+}
+
+.colored {
+  background-color: transparent;
+  color: white;
+}
+
+.editor__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  color: #fff;
+  border-radius: 8px 8px 0 0;
+  padding: 0.3em 0.7em;
+}
+
+.editor__title {
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.editor__box {
+  height: 100% !important;
+}
+
+.codemirror {
+  overflow: hidden;
+  border-radius: 0 0 8px 8px;
+}
