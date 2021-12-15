@@ -4,11 +4,12 @@
   flex-direction: column;
   overflow: hidden;
   width: 100vw;
+  height: 100vh;
   font-family: "Roboto", "sans-serif";
 }
 
 .top-pane {
-  height: 48vh;
+  height: 51vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -16,7 +17,7 @@
 }
 
 .bottom-pane {
-  height: 52vh;
+  height: 49vh;
   margin: auto auto;
 }
 
